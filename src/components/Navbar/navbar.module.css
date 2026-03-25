@@ -15,7 +15,6 @@
   padding: 15px;
   border-radius: 20px;
   backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
   transition:
     width 0.3s ease,
     left 0.3s ease;
