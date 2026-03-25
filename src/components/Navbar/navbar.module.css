@@ -14,8 +14,8 @@
   padding: 15px;
   border-radius: 20px;
   background: var(--nav-bg);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   transition: all 0.3s ease;
 }
 
