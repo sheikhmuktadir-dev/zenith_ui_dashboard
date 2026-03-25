@@ -1,0 +1,17 @@
+.breadcrumb {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.breadcrumbFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.breadcrumbPara {
+  font-size: var(--small-fontsize);
+}

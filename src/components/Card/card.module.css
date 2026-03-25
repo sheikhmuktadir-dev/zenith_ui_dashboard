@@ -1,0 +1,115 @@
+.dashboardCard {
+  position: relative;
+  background: var(--primary-bg);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: var(--card-shadow);
+  align-items: center;
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: var(--brand-color);
+  background: var(--body-bg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  flex: none;
+  border-radius: 100px;
+}
+
+.cardright {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cardTitle {
+  font-size: var(--small-fontsize);
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+/* ********************************************** */
+
+.marketplaceCard {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background: var(--primary-bg);
+}
+
+.marketplaceCardImageArea {
+  position: relative;
+  height: 200px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.marketplaceCardImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.marketplaceCardTextArea {
+  position: relative;
+  padding: 20px 10px 10px;
+}
+
+.marketplaceCardTextFlex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.marketplaceCardPara {
+  position: relative;
+  font-size: var(--small-fontsize);
+  color: var(--secondary-color);
+}
+
+.marketplaceCardBottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0 0;
+}
+
+.marketplaceCardBid {
+  position: relative;
+  color: var(--brand-color);
+  font-size: var(--small-fontsize);
+  font-weight: 600;
+}
+
+.marketplaceCardBtn {
+  position: relative;
+  height: 35px;
+  background: #11047a;
+  padding: 0 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-weight: 500;
+  flex: none;
+  color: var(--light-color);
+  border-radius: 100px;
+}

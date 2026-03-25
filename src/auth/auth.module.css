@@ -1,0 +1,205 @@
+.authSection {
+  position: relative;
+  background: var(--primary-bg);
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.authArea {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.authTheme {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+}
+
+.authLogoBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--upgrade-gradient);
+  width: 50%;
+  border-radius: 0 0 0 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.authTitle {
+  font-weight: 700;
+  line-height: 1em;
+  font-size: 3rem;
+  color: var(--light-color);
+}
+
+.authTitle span {
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.authForm {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.authFormHeading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.authFormHeadingPara {
+  font-size: var(--small-fontsize);
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.authFlex {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.authBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.authLabel {
+  font-weight: 500;
+  font-size: var(--small-fontsize);
+}
+
+.authField {
+  position: relative;
+  background: transparent;
+  height: 50px;
+  background: transparent;
+  width: 100%;
+  padding: 0 15px;
+  color: var(--primary-color);
+  border-radius: 10px;
+  border: 1px solid var(--mute-border);
+}
+
+.authField:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: var(--small-fontsize);
+}
+
+.authForgot {
+  position: relative;
+  text-align: end;
+  font-size: var(--small-fontsize);
+  font-weight: 500;
+  color: var(--brand-color);
+}
+
+.authBtn {
+  position: relative;
+  height: 50px;
+  background: var(--brand-bg);
+  color: var(--light-color);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  flex: none;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.authAnotherLink {
+  font-size: var(--small-fontsize);
+  font-weight: 500;
+}
+
+.authRedirect {
+  position: relative;
+  color: var(--brand-color);
+  padding-left: 5px;
+}
+
+.authPassword {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.authPasswordToggle {
+  z-index: 70;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background: transparent;
+  padding: 0;
+  color: var(--primary-color);
+  position: absolute;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.authError {
+  position: relative;
+  font-size: var(--small-fontsize);
+  color: #f53939;
+  font-weight: 500;
+}
+
+@media (max-width: 1023.98px) {
+  .authLogoBox {
+    display: none;
+  }
+
+  .authArea {
+    max-width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .authTheme {
+    top: 40px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .authArea {
+    max-width: 900px;
+  }
+
+  .authTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .authArea {
+    max-width: 1000px;
+  }
+}

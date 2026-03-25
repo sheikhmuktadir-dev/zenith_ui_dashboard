@@ -1,0 +1,73 @@
+.profileToggle {
+  position: relative;
+  flex: none;
+}
+
+.profileImage {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profileBox {
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  min-width: 225px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0 0 20px;
+  right: 0;
+  box-shadow: var(--nav-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  visibility: hidden;
+  background: var(--primary-bg);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.profileBoxShow {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.profileItem {
+  position: relative;
+  padding: 0 20px;
+}
+
+.profileName {
+  position: relative;
+  padding: 10px 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid var(--mute-border);
+}
+
+.profileLink {
+  position: relative;
+  font-size: var(--small-fontsize);
+}
+
+.profileLog {
+  position: relative;
+  cursor: pointer;
+  color: #f53939;
+  font-size: var(--small-fontsize);
+  font-weight: 500;
+}

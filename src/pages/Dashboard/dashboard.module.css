@@ -1,0 +1,80 @@
+.dashboardMain {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.dashboardCardGrid {
+  position: relative;
+  display: grid;
+  grid-column: span 12;
+  align-items: stretch;
+  grid-template-columns: repeat(6, 2fr);
+  gap: 20px;
+}
+
+.dashboarChartTop {
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  grid-column: span 6;
+}
+
+.dashboarTableBottom {
+  position: relative;
+  display: grid;
+  grid-column: span 6;
+}
+
+.dashboarChartBottom {
+  display: grid;
+  position: relative;
+  grid-column: span 3;
+}
+
+@media (max-width: 767.98px) {
+  .dashboardCardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboarChartTop {
+    grid-column: span 12;
+  }
+
+  .dashboarTableBottom {
+    grid-column: span 12;
+  }
+
+  .dashboarChartBottom {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .dashboardCardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboarTableBottom {
+    grid-column: span 12;
+  }
+
+  .dashboarChartBottom {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1599.98px) {
+  .dashboardCardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboarTableBottom {
+    grid-column: span 12;
+  }
+
+  .dashboarChartBottom {
+    grid-column: span 6;
+  }
+}

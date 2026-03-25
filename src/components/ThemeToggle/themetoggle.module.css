@@ -1,0 +1,15 @@
+.themeToggle {
+  position: relative;
+  width: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  height: 45px;
+  cursor: pointer;
+  line-height: 1;
+  color: var(--secondary-color);
+  border-radius: 100px;
+  background: var(--body-bg);
+}

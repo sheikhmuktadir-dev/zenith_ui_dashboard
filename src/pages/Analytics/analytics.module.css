@@ -1,0 +1,40 @@
+.analyticsMain {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.analyticsChartLarge {
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  grid-column: span 6;
+}
+
+.analyticsChartSmall {
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  grid-column: span 3;
+}
+
+@media (max-width: 767.98px) {
+  .analyticsChartLarge {
+    grid-column: span 12;
+  }
+
+  .analyticsChartSmall {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599.98px) {
+  .analyticsChartLarge {
+    grid-column: span 6;
+  }
+
+  .analyticsChartSmall {
+    grid-column: span 6;
+  }
+}

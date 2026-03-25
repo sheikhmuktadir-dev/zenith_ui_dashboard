@@ -1,0 +1,15 @@
+.menuToggle {
+  position: relative;
+  width: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  line-height: 1;
+  height: 45px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  border-radius: 100px;
+  background: var(--body-bg);
+}

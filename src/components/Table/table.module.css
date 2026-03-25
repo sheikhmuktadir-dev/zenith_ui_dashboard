@@ -1,0 +1,103 @@
+.tableBox {
+  background: var(--primary-bg);
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.tableBoxFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableTitle {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.tableTitleBox {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--brand-color);
+  border-radius: 10px;
+  background: var(--body-bg);
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 30px 0 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tableWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.table th {
+  text-align: left;
+  font-size: var(--small-fontsize);
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--secondary-color);
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--mute-border);
+}
+
+/* Body */
+.table td {
+  padding: 16px 10px;
+  white-space: nowrap;
+  font-size: var(--small-fontsize);
+  font-weight: 600;
+  border-bottom: 1px solid var(--body-bg);
+}
+
+/* Checkbox */
+.table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Hover */
+.table tbody tr:hover {
+  background: var(--body-bg);
+  transition: 0.2s ease;
+}
+
+/* First column (name + checkbox) */
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .table {
+    min-width: 600px;
+  }
+}

@@ -1,0 +1,75 @@
+:root {
+  /* bg */
+  --body-bg: #f4f7fe;
+  --primary-bg: #ffffff;
+  --nav-bg: #ffffff1a;
+  --brand-bg: #422afb;
+
+  /* color */
+  --primary-color: #1b254b;
+  --secondary-color: #a3aed0;
+  --mute-color: #a0aec0;
+  --brand-color: #422afb;
+  --light-color: #ffffff;
+
+  /* shadow */
+  --sidebar-shadow: 0 25px 50px -12px #ffffff0d;
+  --nav-shadow:
+    0 10px 30px -5px rgba(112, 144, 176, 0.15),
+    0 4px 10px -5px rgba(112, 144, 176, 0.1);
+  --card-shadow: 14px 17px 40px 4px #7090b014;
+
+  /* gradient */
+  --upgrade-gradient: linear-gradient(
+    to bottom right,
+    #868cff,
+    #432cf3,
+    #422afb
+  );
+  --circle-upgrade-gradient: linear-gradient(to bottom, #868cff, #432cf3);
+
+  /* border */
+  --primary-border: #cbd5e0;
+  --secondary-border: #ffffff;
+  --mute-border: #e9ecef;
+
+  /* font */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "DM Sans", sans-serif;
+
+  /* sidebar */
+  --sidebar-width: 290px;
+  --sidebar-collapse-width: 90px;
+  --sidebar-height: 100vh;
+
+  /* navbar */
+  --navbar-height: 90px;
+  --navbar-leftspace: 310px;
+  --navbar-leftspace-expand: 110px;
+
+  /* content */
+  --content-leftspace: 290px;
+  --context-leftspace-expand: 90px;
+  --content-top-padding: 80px 0 0;
+
+  /* fontsize */
+  --small-fontsize: 13px;
+}
+
+[data-theme="dark"] {
+  --body-bg: #0b1437;
+  --primary-bg: rgb(17, 28, 68);
+  --nav-bg: #0b14374d;
+
+  /* color */
+  --primary-color: #ffffff;
+
+  /* border */
+  --primary-border: #ffffff4d;
+  --mute-border: #fff3;
+
+  /* shadow */
+  --sidebar-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+  --nav-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --card-shadow: 0 20px 30px -25px rgba(0, 0, 0, 0.4);
+}

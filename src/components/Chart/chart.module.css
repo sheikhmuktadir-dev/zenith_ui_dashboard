@@ -1,0 +1,124 @@
+.chartBox {
+  position: relative;
+  background: var(--primary-bg);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: var(--card-shadow);
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chartBoxTop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chartBoxFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chartBoxHeading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chartBoxSmallTitle {
+  font-size: var(--small-fontsize);
+  font-weight: 500;
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.chartBoxIncrement {
+  font-size: var(--small-fontsize);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #22c55e;
+}
+
+.chartBoxTitle {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.chartHeadingBox {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--brand-color);
+  border-radius: 10px;
+  background: var(--body-bg);
+}
+
+.chartCount {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartVisitor {
+  position: relative;
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.pieBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.legendText {
+  color: var(--secondary-color);
+  font-size: var(--small-fontsize);
+}
+
+.dotPurple {
+  width: 8px;
+  height: 8px;
+  background: #422afb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.dotBlue {
+  width: 8px;
+  height: 8px;
+  background: #6ad2ff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: #e6edf9;
+}
+
+@media (max-width: 767.98px) {
+  .chartBox {
+    min-height: 380px;
+  }
+}

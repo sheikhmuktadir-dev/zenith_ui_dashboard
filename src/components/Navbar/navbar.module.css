@@ -1,0 +1,105 @@
+.navbar {
+  position: fixed;
+  width: calc(100% - var(--navbar-leftspace) - 15px);
+  left: var(--navbar-leftspace);
+  top: 15px;
+  right: 15px;
+  height: var(--navbar-height);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 20px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  transition: all 0.3s ease;
+}
+
+.navbarExpand {
+  width: calc(100% - var(--navbar-leftspace-expand) - 15px);
+  left: var(--navbar-leftspace-expand);
+}
+
+.navbarRightBox {
+  position: relative;
+  height: 60px;
+  padding: 0 10px;
+  border-radius: 100px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--nav-shadow);
+  gap: 8px;
+  background: var(--primary-bg);
+}
+
+.navSearchArea {
+  position: relative;
+}
+
+.navSearchBox {
+  max-width: 200px;
+  width: 100%;
+  height: 45px;
+  border-radius: 100px;
+  border: none;
+  color: var(--primary-color);
+  padding: 0 20px 0 40px;
+  font-size: var(--small-fontsize);
+  background: var(--body-bg);
+  position: relative;
+}
+
+.navSearchBox:focus {
+  outline: navajowhite;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--mute-color);
+}
+
+.navSearchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  z-index: 50;
+  color: var(--mute-color);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    right: 0;
+    gap: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+  }
+
+  .navSearchBox {
+    max-width: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .navbar {
+    position: sticky;
+    width: 100%;
+    gap: 10px;
+    left: 0;
+    top: 10px;
+    padding: 10px;
+    right: 0;
+  }
+}

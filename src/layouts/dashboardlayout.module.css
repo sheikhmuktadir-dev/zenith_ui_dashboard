@@ -1,0 +1,35 @@
+.dashboard {
+  position: relative;
+}
+
+.dashboardContentArea {
+  position: relative;
+  padding: 30px;
+  width: calc(100% - var(--content-leftspace));
+  left: var(--content-leftspace);
+  transition: all 0.3s ease;
+}
+
+.dashboardContentAreaExpand {
+  width: calc(100% - var(--context-leftspace-expand));
+  left: var(--context-leftspace-expand);
+}
+
+.dashboardContentMain {
+  position: relative;
+  padding: var(--content-top-padding);
+  min-height: 100vh;
+}
+
+@media (max-width: 1023.98px) {
+  .dashboardContentArea,
+  .dashboardContentAreaExpand {
+    width: 100%;
+    left: 0;
+    padding: 10px;
+  }
+
+  .dashboardContentMain {
+    padding: 10px 10px 0;
+  }
+}

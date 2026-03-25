@@ -1,0 +1,19 @@
+.dataTabledMain {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.dataTableBox {
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  grid-column: span 6;
+}
+
+@media (max-width: 767.98px) {
+  .dataTableBox {
+    grid-column: span 12;
+  }
+}

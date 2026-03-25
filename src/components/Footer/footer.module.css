@@ -1,0 +1,10 @@
+.footerMain {
+  position: relative;
+  padding: 40px 0 20px;
+}
+
+.footerText {
+  position: relative;
+  text-align: center;
+  color: var(--secondary-color);
+}
