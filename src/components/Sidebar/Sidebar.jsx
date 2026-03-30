@@ -7,7 +7,7 @@ import { MenuContext } from "../../context/MenuContext/MenuContext";
 import { IoMdClose } from "react-icons/io";
 
 export default function Sidebar() {
-  const { menuToggle, setMenuToggle } = useContext(MenuContext);
+  const { menuToggle, setMenuToggle, ref } = useContext(MenuContext);
 
   // Helper to close ONLY on mobile and tab
   const handleNavLinkClick = () => {
@@ -19,6 +19,7 @@ export default function Sidebar() {
   return (
     <div
       className={`${Style.sidebar} ${menuToggle ? Style.sidebarCollapse : ""}`}
+      ref={ref}
     >
       <button
         className={Style.sidebarClose}
