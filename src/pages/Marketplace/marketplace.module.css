@@ -88,9 +88,7 @@
   .marketplaceMain {
     grid-template-columns: 1fr;
   }
-}
 
-@media (min-width: 1280px) and (max-width: 1599.98px) {
   .marketplaceRight {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
