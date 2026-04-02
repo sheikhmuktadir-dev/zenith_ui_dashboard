@@ -119,6 +119,12 @@
 
 @media (max-width: 767.98px) {
   .chartBox {
-    min-height: 380px;
+    min-height: 360px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599.98px) {
+  .chartBox {
+    min-height: 400px;
   }
 }

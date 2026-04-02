@@ -47,13 +47,6 @@ export const tableData = [
     quantity: 858,
     date: "Oct 24, 2022",
   },
-  {
-    id: 5,
-    name: "Marketplace",
-    progress: 75.5,
-    quantity: 258,
-    date: "Nov 29, 2022",
-  },
 ];
 
 export const ordersColumns = [
