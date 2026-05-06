@@ -1,37 +1,34 @@
 :root {
   /* bg */
-  --body-bg: #f4f7fe;
+  --body-bg: #f6f8ff; /* softer than pure white */
   --primary-bg: #ffffff;
-  --nav-bg: #ffffff1a;
-  --brand-bg: #422afb;
+  --nav-bg: transparent;
+  --brand-bg: #5b5efc;
 
   /* color */
-  --primary-color: #1b254b;
-  --secondary-color: #a3aed0;
-  --mute-color: #a0aec0;
-  --brand-color: #422afb;
+  --primary-color: #0f172a; /* rich dark (not black) */
+  --secondary-color: #64748b;
+  --mute-color: #94a3b8;
+  --brand-color: #5b5efc;
   --light-color: #ffffff;
 
-  /* shadow */
-  --sidebar-shadow: 0 25px 50px -12px #ffffff0d;
-  --nav-shadow:
-    0 10px 30px -5px rgba(112, 144, 176, 0.15),
-    0 4px 10px -5px rgba(112, 144, 176, 0.1);
-  --card-shadow: 14px 17px 40px 4px #7090b014;
+  /* shadow (soft layered depth) */
+  --sidebar-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
 
-  /* gradient */
-  --upgrade-gradient: linear-gradient(
-    to bottom right,
-    #868cff,
-    #432cf3,
-    #422afb
-  );
-  --circle-upgrade-gradient: linear-gradient(to bottom, #868cff, #432cf3);
+  --nav-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.03);
+
+  /* gradient (premium subtle) */
+  --upgrade-gradient: linear-gradient(135deg, #7c83ff, #5b5efc, #4f46e5);
+
+  --circle-upgrade-gradient: linear-gradient(to bottom, #7c83ff, #4f46e5);
 
   /* border */
-  --primary-border: #cbd5e0;
-  --secondary-border: #ffffff;
-  --mute-border: #e9ecef;
+  --primary-border: rgba(15, 23, 42, 0.08);
+  --secondary-border: rgba(255, 255, 255, 0.8);
+  --mute-border: rgba(15, 23, 42, 0.06);
 
   /* font */
   --primary-font: "Poppins", sans-serif;
@@ -57,19 +54,33 @@
 }
 
 [data-theme="dark"] {
-  --body-bg: #0b1437;
-  --primary-bg: rgb(17, 28, 68);
-  --nav-bg: #0b14374d;
+  --body-bg: #060b28;
+  --primary-bg: #0f1a44;
+  --nav-bg: transparent;
 
   /* color */
-  --primary-color: #ffffff;
+  --primary-color: #f8fafc;
+  --secondary-color: #94a3b8;
+  --mute-color: #64748b;
+  --brand-color: #7c83ff;
+  --light-color: #ffffff;
 
   /* border */
-  --primary-border: #ffffff4d;
-  --mute-border: #fff3;
+  --primary-border: rgba(255, 255, 255, 0.08);
+  --secondary-border: rgba(255, 255, 255, 0.04);
+  --mute-border: rgba(255, 255, 255, 0.06);
 
-  /* shadow */
-  --sidebar-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
-  --nav-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  --card-shadow: 0 20px 30px -25px rgba(0, 0, 0, 0.4);
+  /* shadow (deep layered) */
+  --sidebar-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  --nav-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.04), 0 10px 25px rgba(0, 0, 0, 0.5);
+
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  /* gradient */
+  --upgrade-gradient: linear-gradient(135deg, #7c83ff, #5a54ff, #3b36f5);
+
+  --circle-upgrade-gradient: linear-gradient(to bottom, #7c83ff, #3b36f5);
 }

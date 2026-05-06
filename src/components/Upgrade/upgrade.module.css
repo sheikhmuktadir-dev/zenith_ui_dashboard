@@ -27,7 +27,7 @@
   align-items: center;
   text-align: center;
   flex: none;
-  border: 4px solid var(--secondary-border);
+  border: 4px solid var(--light-color);
   border-radius: 100px;
   margin-top: -45px;
   background: var(--circle-upgrade-gradient);
